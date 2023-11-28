@@ -60,6 +60,10 @@
 
     }
 
+    /* #services-1081 .cs-icon {
+        color: transparent;
+    } */
+
     #services-1081 .cs-item:hover .cs-picture:before {
         opacity: 0.8;
     }
