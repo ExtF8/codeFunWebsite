@@ -60,9 +60,9 @@
 
     }
 
-    /* #services-1081 .cs-icon {
-        color: transparent;
-    } */
+    #services-1081 .cs-icon {
+        filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+    }
 
     #services-1081 .cs-item:hover .cs-picture:before {
         opacity: 0.8;
