@@ -1,11 +1,11 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #services-1081 {
+    #mainContent {
         padding: var(--sectionPadding);
         background-color: #f7f7f7;
     }
 
-    #services-1081 .cs-container {
+    .content-container {
         width: 100%;
         /* changes to 1280px at tablet */
         max-width: 34.375rem;
@@ -14,39 +14,29 @@
         flex-direction: column;
         align-items: center;
         /* 48px - 64px */
-        gap: clamp(3rem, 6vw, 4rem);
+        gap: clamp(2rem, 6vw, 1rem);
     }
 
-    #services-1081 .cs-content {
-        /* set text align to left if content needs to be left aligned */
+    .header-content {
         text-align: center;
-        width: 100%;
         display: flex;
         flex-direction: column;
-        /* centers content horizontally, set to flex-start to left align */
         align-items: center;
+        margin: 1rem;
     }
 
-    #services-1081 .cs-title {
-        max-width: 22ch;
-    }
-
-    #services-1081 .cs-card-group {
+    .card-group-container {
         width: 100%;
         margin: 0;
         padding: 0;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-
-        /* grid-template-columns: repeat(auto-fit, 100px); */
-        /* grid-template-rows: repeat(3, minmax(auto, 1fr));  */
-        /* grid-template-rows: repeat(12, 15px); */
         align-items: stretch;
         /* 16px - 20px */
         gap: clamp(1rem, 2vw, 1.25rem);
     }
 
-    #services-1081 .cs-item {
+    .card-group-item {
         text-align: left;
         list-style: none;
         width: 100%;
@@ -60,23 +50,23 @@
 
     }
 
-    #services-1081 .cs-icon {
+    .item-title-icon {
         filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
     }
 
-    #services-1081 .cs-item:hover .cs-picture:before {
+    .card-group-item:hover .group-item-picture:before {
         opacity: 0.8;
     }
 
-    #services-1081 .cs-item:hover .cs-picture img {
+    .card-group-item:hover .group-item-picture img {
         transform: scale(1.2);
     }
 
-    #services-1081 .cs-item:hover .cs-h3 {
+    .card-group-item:hover .item-title {
         background-color: var(--primary);
     }
 
-    #services-1081 .cs-picture {
+    .group-item-picture {
         width: 100%;
         /* 180px - 240px */
         height: clamp(11.25rem, 24vw, 15rem);
@@ -86,7 +76,7 @@
         position: relative;
     }
 
-    #services-1081 .cs-picture:before {
+    .group-item-picture:before {
         /* black hover overlay */
         content: "";
         width: 100%;
@@ -100,7 +90,7 @@
         transition: opacity 0.3s;
     }
 
-    #services-1081 .cs-picture img {
+    .group-item-picture img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -111,7 +101,7 @@
         transition: transform 0.65s;
     }
 
-    #services-1081 .cs-h3 {
+    .item-title {
         /* 20px - 25px */
         font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
         line-height: 1.5em;
@@ -135,7 +125,7 @@
         transition: background-color 0.3s;
     }
 
-    #services-1081 .cs-item-text {
+    .card-group-item-text {
         font-size: clamp(0.875rem, 1.5vw, 1rem);
         line-height: 1.5em;
         text-align: inherit;
@@ -149,7 +139,7 @@
         color: var(--bodyTextColor);
     }
 
-    #services-1081 .cs-link {
+    .group-item-link {
         font-size: 1rem;
         line-height: 1.2em;
         text-align: inherit;
@@ -164,29 +154,39 @@
         margin-top: auto;
     }
 
-    #services-1081 .cs-link:hover .cs-arrow {
+    .group-item-link:hover .item-link-arrow {
         transform: translateX(0.25rem);
     }
 
-    #services-1081 .cs-arrow {
+    .item-link-arrow {
         width: 1.25rem;
         height: auto;
         display: block;
         transition: transform 0.3s;
     }
+
+    .footer-content-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 0;
+        height: 2vh;
+        /* height: fit-content; */
+    }
 }
 
 /* Tablet - 768px */
 @media only screen and (min-width: 78rem) {
-    #services-1081 .cs-container {
+    .content-container {
         max-width: 100rem;
     }
 
-    #services-1081 .cs-card-group {
+    .card-group-container {
         grid-template-columns: repeat(16, minmax(auto, 1fr));
     }
 
-    #services-1081 .cs-item {
+    .card-group-item {
         grid-column: span 4;
     }
 }
