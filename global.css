@@ -13,7 +13,7 @@
     --headerFontSize: clamp(2.5rem, 3.9vw, 4rem);
     --bodyFontSize: 1.2rem;
     /* 60px - 100px top and bottom */
-    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    --sectionPadding: clamp(3rem, 7vw, 1rem) 1rem;
 }
 
 body {
@@ -37,8 +37,9 @@ header {
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
+    text-transform: uppercase;
     text-align: inherit;
-    max-width: 50rem;
+    max-width: 60rem;
     margin: 0 0 1rem 0;
     color: var(--headerColor);
     position: relative;
@@ -62,7 +63,7 @@ header {
     line-height: 1.5em;
     text-align: inherit;
     width: 100%;
-    max-width: 40.625rem;
+    max-width: 44rem;
     margin: 0;
     color: var(--bodyTextColor);
 }
@@ -77,7 +78,7 @@ footer {
 }
 
 footer>div>p:first-child,
-footer>div>a:link {
+footer>div>a:link, footer>div>a:visited {
     text-decoration: none;
     color: var(--footerTextColorGray);
 }
