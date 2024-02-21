@@ -16,6 +16,10 @@
     --sectionPadding: clamp(3rem, 7vw, 1rem) 1rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', 'Arial', sans-serif;
     margin: 0;
