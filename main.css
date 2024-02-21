@@ -113,8 +113,6 @@
         /* 12px - 16px top & Bottom */
         /* 16px - 24px left & right */
         padding: clamp(0.75rem, 1.6vw, 1rem) clamp(1rem, 2.5vw, 1.5rem);
-        /* prevents padding and border from affecting height and width */
-        box-sizing: border-box;
         background-color: #1a1a1a;
         color: var(--bodyTextColorWhite);
         display: flex;
@@ -133,8 +131,6 @@
         margin: 0 0 1.25rem;
         /* 16px - 24px */
         padding: clamp(1rem, 2.5vw, 1.25rem);
-        /* prevents padding and border from affecting height and width */
-        box-sizing: border-box;
         padding-bottom: 0;
         color: var(--bodyTextColor);
     }
@@ -172,7 +168,7 @@
         font-size: 14px;
         gap: 4px;
         padding: 0;
-        height: 2vh;
+        height: 1.2vh;
         margin-block: 2px;
     }
 }
